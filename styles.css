@@ -274,7 +274,8 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;    
-    padding: .5em;    
+    padding: .5em 0 .5em .5em;    
+    width: 13em;
 }
 .social-icon {
     height: 1.7em;
