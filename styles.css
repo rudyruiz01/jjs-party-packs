@@ -13,7 +13,7 @@ body {
 }
 .homehero {
     height: 350px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.249), rgba(255, 255, 255, 0.249)), url('Images/WhiteWeddingChairs.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.249), rgba(255, 255, 255, 0.249)), url('Images/whiteweddingchairs.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
