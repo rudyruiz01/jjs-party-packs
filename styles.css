@@ -11,6 +11,75 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
+button {
+    border: none;
+    background-color: transparent;
+}
+main {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 .7em;
+}
+.wrapper {
+    min-width: 300px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;    
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+/****** Home Nav ******/
+.home-logo {   
+    height: 50px; 
+    border: none;
+}
+.toggle-menu {
+    height: 40px;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+}
+.links {
+    display: none;
+    flex-direction: column;
+    text-align: center;    
+    border-top: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.toggle-links {
+   display: flex;    
+}
+.rotate {
+    transform: rotate(-0.25turn);
+    transition-duration: 0.75s;
+}
+.main-nav li {    
+    font-family: 'Quicksand', sans-serif;   
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .3em;    
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.main-nav a {
+    color: white;
+}
+.main-nav .links li a:hover {
+    color: rgb(238, 199, 100);
+}
+.links .current {
+    color:rgb(238, 199, 100);
+}
 .homehero {
     height: 350px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.249), rgba(255, 255, 255, 0.249)), url('Images/whiteweddingchairs.jpg');
@@ -20,13 +89,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#home-logo {    
-    font-size: 3.5em;    
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-shadow: .05em .05em .05em white;
-    border-bottom: 3.5px solid black;
 }
 .header-banner {
     display: flex;
@@ -43,47 +105,6 @@ body {
     text-shadow: .05em .05em .05em white;
     border-bottom: 2px solid black;
 }
-.main-nav ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;    
-    font-size: 1em;
-    font-weight: 600;    
-}
-.main-nav li {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: .3em;
-    border-bottom: 1px solid black;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-.main-nav a:hover {
-    color: rgb(238, 199, 100);
-}
-.current {
-    color:rgb(238, 199, 100);
-}
-a {
-    text-decoration: none;    
-    color: black;
-}
-li {
-    list-style-type: none;
-}
-.wrapper {
-    min-width: 300px;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-main {
-    width: auto;
-    margin: 0 auto;
-    padding: 0 .7em;
-}
-
 /****** Home Page Styles ******/
 .intro {    
     display: flex;
@@ -290,21 +311,32 @@ footer a:hover {
 
 /****** Responsive Design Styles ******/
 @media (min-width: 600px) {
-    .main-nav {
-        max-width: 768px;
-        margin: 0 auto;
+    .nav-toggle {
+        display: none;
     }
-    .main-nav ul{
+    .main-nav {
+        max-width: 1024px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding-top: .7em;
-        padding-left: 5em;   
     }
-    .main-nav li {
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        border: none;        
+    }
+    .links a {
+        color: black;
+    }  
+    .links li {
         border-bottom: none;
         font-weight: 500;
+        padding-right: 2rem;
     }
     section {
        display: grid; 
