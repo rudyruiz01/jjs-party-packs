@@ -28,7 +28,7 @@
   </header>
   <div class="wrapper">
   <main>
-    <p class="page-para-style max-p-width">Let's give it a go! We know that planning your event isn't easy. But we are here to help. Let us know what you need and we will do the rest. We will help plan the perfect party no matter the size or budget you have. Just sit back and relax, because we've done this hundreds of times before.</p>
+    <p class="page-para-style max-p-width">Let's give it a go! We know planning your event isn't easy so we are here to help. Let us know what you need and we will do the rest. We will help plan the perfect party no matter the size or budget you have. Just sit back and relax, because we've done this hundreds of times.</p>
     <hr class="home-hr">
     <div class="packages-container">
       <div class="package">
@@ -78,51 +78,40 @@
         </ul>
       </div>
     </div>
-    <table>
-      <caption>Build Your Own Package</caption>
-      <tr>
-        <th>Item</th>
-        <th>Description</th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <td>8ft Table</td>
-        <td>Rectangular</td>
-        <td>$8</td>
-      </tr>
-      <tr>
-        <td>6ft Table</td>
-        <td>Rectangular</td>
-        <td>$10</td>
-      </tr>
-      <tr>
-        <td>Round Table</td>
-        <td>6 foot diameter</td>
-        <td>$10</td>
-      </tr>
-      <tr>
-        <td>Black Chair</td>
-        <td>Has seat cushion</td>
-        <td>$2</td>
-      </tr>
-      <tr>
-        <td>White Chair</td>
-        <td>Has seat cushion</td>
-        <td>$2</td>
-      </tr>
-      <tr>
-        <td>Chivalry Silver Chair</td>
-        <td>Silver color</td>
-        <td>$4.50</td>
-      </tr>
-      <tr>
-        <td>Tent</td>
-        <td>10ft x 30ft</td>
-        <td>$150</td>
-      </tr>
-    </table>
+    <div class="container">
+      <h3>Estimate Your Costs**</h3>
+      <form>
+        <div class="form-group">
+          <label for="eight-foot-table">8-foot Rectangular Table ($10 each)</label>
+          <input type="number" id="eight-foot-table" name="eight-foot-table" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="six-foot-table">6-foot Rectangular Table ($8 each)</label>
+          <input type="number" name="six-foot-table" id="six-foot-table" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="round-table">5-foot Round Table ($12 each)</label>
+          <input type="number" name="round-table" id="round-table" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="black-chair">Black Chair ($2 each)</label>
+          <input type="number" name="black-chair" id="black-chair" min="0" value="0"> 
+        </div>
+        <div class="form-group">
+          <label for="chivarly-chair">Chivalry Chair ($4.50 each)</label>
+          <input type="number" name="chivarly-chair" id="chivarly-chair" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="miles">Distance from Waco (Enter 0 if in Waco)</label>
+          <input type="number" name="miles" id="miles" min="0" value="0">
+        </div>
+        <button type="button" id="estimate-btn" class="calculator-btn" onclick="calculateEstimate()">Estimate</button>
+      </form> 
+      <div id="estimated-cost">Estimated Cost: $0.00</div>
+    </div>
     <p class="page-para-style max-p-width">
-      <sup>*</sup>Orders over $150 include delivery, set up, and next day pick up. Orders that don't meet the minimum are subject to $25 base delivery fee in Waco. Orders outside Waco are subject to base fee and an additional $2 per mile. 
+      <sup>*</sup>Orders in Waco over $150 include delivery, set up, and next day pick up. Orders that don't meet the minimum are subject to $20 base delivery fee. Orders outside Waco are subject to the base delivery fee and an additional $2 per mile. Additionally, orders outside Waco that meet the $150 minimum are still required to pay the $2 per mile delivery.<br><br>
+      <sup>**</sup> Although we try our best to keep this calculator up-to-date with current rental rates, Estimated Costs are subject to change without notice. This calculator is meant for the customers convinence. To get the final price please reach out us. Thank you for your understanding. 
     </p>    
   </main>
   </div>

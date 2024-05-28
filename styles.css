@@ -120,7 +120,7 @@ li {
     width: 50%;
     max-width: 400px;
     height: 3px;
-    margin: 2.5em auto 4em;
+    margin: 2.5em auto 1em;
     background-color: rgb(238, 199, 100);
 }
 section {
@@ -205,15 +205,39 @@ section img, .package img {
 .page-para-style {
     width: 90%;
     font-size: 1.1em;
-    margin: 3em auto;
+    margin: 2em auto;
     line-height: 1.6em;    
 }
-table {
-    width: 90%;
-    margin: 0 auto;
-    border-spacing: 0;
-    border: 1px solid rgb(238, 199, 100);
+h3 {
+    padding: 0;
+    margin: auto;
+}
+.calculator-btn {
+    width: 100%;
+    margin: 10px auto 15px;
+    background-color: rgb(238, 199, 100);
+    border: 1px solid black;
     border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+form label {
+    font-size: 1.1em;
+}
+form input { 
+    font-size: 1.3em;
+    margin-top: 5px;   
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#estimated-cost {
+    margin: 20px 0;
+    font-weight: 1000;
+    font-size: 1.2em;
 }
 caption, th {
     font-size: 1.1em;
@@ -232,21 +256,15 @@ td {
 }
 
 /****** Contact Us Page Styles ******/
-form {
+.container {
     display: flex;
     flex-direction: column;
     width: 80%;
     background-color: rgb(231, 215, 202);
     border: 2px solid rgb(238, 199, 100);
+    border-radius: 1em;
     padding: 1em;
-    margin: 5em auto 3em auto;
-}
-form input {    
-    margin-bottom: .5em;    
-}
-input[type="submit"] {
-    margin-top: 1.5em;
-    height: 2.3em;
+    margin: 1em auto 3em auto;
 }
 .contact-info {
     font-size: 1.1em;
@@ -406,7 +424,7 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;     
-        margin-bottom: 2em;   
+        /* margin-bottom: 2em;    */
     }
 }
 @media (min-width: 1080px) {
